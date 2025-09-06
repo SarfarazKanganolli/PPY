@@ -1,5 +1,4 @@
 'use client'
-import "@/app/chartSetup";  
 import { Line } from 'react-chartjs-2'
 import { useRef } from 'react'
 import DownloadPdf from '../utils/DownloadPdf'

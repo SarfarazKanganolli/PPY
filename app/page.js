@@ -1,6 +1,7 @@
 'use client'
 
 import Cards from "./components/Cards"
+import "@/app/chartSetup";  
 // import ChartSection from "./components/ChartSection"
 import Header from "./components/Header"
 import History from "./components/History"

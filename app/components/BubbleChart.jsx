@@ -1,5 +1,5 @@
 'use client'
-import "@/app/chartSetup";  
+
 import { useRef } from 'react'
 import { Bubble } from 'react-chartjs-2'
 import { bubbleData } from '@/app/data/chartData'

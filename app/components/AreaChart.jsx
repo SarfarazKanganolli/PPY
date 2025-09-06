@@ -1,16 +1,7 @@
 'use client'
 
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-  Filler,
-} from 'chart.js'
+
+import "@/app/chartSetup";  
 import { Line } from 'react-chartjs-2'
 import DownloadPdf from '../utils/DownloadPdf'
 import { useRef } from 'react'

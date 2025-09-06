@@ -1,7 +1,7 @@
 'use client'
 
-import { Chart as ChartJS, Title, Tooltip, Legend, PointElement, LinearScale } from 'chart.js'
-import ChartDataLabels from 'chartjs-plugin-datalabels'
+
+import "@/app/chartSetup";  
 import { useRef } from 'react'
 import { Bubble } from 'react-chartjs-2'
 

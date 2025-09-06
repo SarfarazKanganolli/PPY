@@ -6,27 +6,23 @@ import {
   PointElement,
   LineElement,
   BarElement,
+  BarController,  
+  LineController,  
   Title,
   Tooltip,
   Legend,
-  Filler,
-  BubbleController,
-  ArcElement,
 } from "chart.js";
 
-import ChartDataLabels from "chartjs-plugin-datalabels";
-
+// Register everything once globally
 ChartJS.register(
   CategoryScale,
   LinearScale,
   PointElement,
   LineElement,
   BarElement,
+  BarController,
+  LineController,  
   Title,
   Tooltip,
-  Legend,
-  Filler,
-  BubbleController,
-  ArcElement,
-  ChartDataLabels
+  Legend
 );

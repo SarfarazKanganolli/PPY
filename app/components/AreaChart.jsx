@@ -1,0 +1,48 @@
+'use client'
+
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler,
+} from 'chart.js'
+import { Line } from 'react-chartjs-2'
+import DownloadPdf from '../utils/DownloadPdf'
+import { useRef } from 'react'
+
+import { areaData } from '@/app/data/chartData'
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler 
+)
+
+const AreaChart = () => {
+  const chartRef  = useRef(null)
+
+  return (
+    <div className="w-full h-auto space-y-5">
+        <div className='flex justify-between px-5 py-2'>
+        <h1 className='font-semibold'>Client</h1>
+        <DownloadPdf targetRef={chartRef} fileName='area-chart.pdf'/>
+      </div>
+      <div  ref={chartRef} className='h-auto  flex flex-col items-center'>
+         <Line data={areaData.data} height={230} options={areaData.options} />
+      </div>
+     
+    </div>
+  )
+}
+
+export default AreaChart
